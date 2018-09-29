@@ -87,7 +87,10 @@ for tweet in iterator:
     # Twitter Python Tool wraps the data returned by Twitter 
     # as a TwitterDictResponse object.
     # We convert it back to the JSON format to print/score
-    print (json.dumps(tweet))  
+    mnop=json.dumps(tweet, indent=2)
+    
+with open('https://github.com/technocrat-mietians/ibm-watson-hachathon-mood-analysis/tree/technocrat-mietians-patch-1/profile.json', 'w') as profile:
+    profile.write(mnop)
     
     # The command below will do pretty printing for JSON data, try it out
     # print json.dumps(tweet, indent=4)
